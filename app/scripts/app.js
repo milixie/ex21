@@ -25,6 +25,21 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/show', {
+        templateUrl: 'views/show.html',
+        controller: 'ShowCtrl',
+        controllerAs: 'show'
+      })
+      .when('/exper', {
+        templateUrl: 'views/exper.html',
+        controller: 'ExperCtrl',
+        controllerAs: 'exper'
+      })
+      .when('/info', {
+        templateUrl: 'views/info.html',
+        controller: 'InfoCtrl',
+        controllerAs: 'info'
+      })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
