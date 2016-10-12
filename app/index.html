@@ -15,26 +15,147 @@
     <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="projectNameApp">
+  <body>
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
     <header>
       <div class="container">      
-        <a href="/#/"><img src="images/head.jpg"></a>
+        <a href="#info"><img src="images/head.jpg"></a>
         <nav>
-          <ul>
-            <li><a href="/#/">自我描述</a></li>
-            <li><a href="/#/show">作品展示</a></li>
-            <li><a href="/#/exper">项目经验</a></li>
-            <li><a href="/#/about">关于</a></li>
+          <ul id="menu">
+            <li data-menuanchor="info"><a href="#info">自我描述</a></li>
+            <li data-menuanchor="show"><a href="#show">作品展示</a></li>
+            <li data-menuanchor="exper"><a href="#exper">项目经验</a></li>
+            <li data-menuanchor="about"><a href="#about">关于</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    
-    <div ng-view=""></div>
+
+    <div id="dowebok">
+      <div class="section section1">
+        <div class="head">
+          <img class="img-border" src="images/circle2.png">
+          <img class="img-head" src="images/head.jpg">
+        </div>
+        
+        <h2>谢美丽</h2>
+        <p class="detail">一年前端开发经验</p>
+        <ul class="clearfix">
+          <li><b>最高学历：</b><span>本科 山东财经大学</span></li>
+          <li><b>期望职位：</b><span>前端开发工程师</span></li>
+          <li><b>工作经验：</b><span>一年</span></li>
+          <li><b>工作性质：</b><span>全职</span></li>
+          <li><b>出生年月：</b><span>1992.02</span></li>
+          <li><b>性别：</b><span>女</span></li>
+          <li><b>期望城市：</b><span>北京</span></li>
+          <li><b>所在城市：</b><span>北京</span></li>
+          <li><b>期望月薪：</b><span>8k-12k</span></li>
+          <li><b>手机号：</b><span>18665876613</span></li>
+          <li><b>联系邮箱：</b><span>xiemeilihcy@foxmail.com</span></li>
+        </ul>
+      </div>
+      <div class="section section2">
+        <h2>作品展示</h2>
+        <div class="container works">
+          <div class="work-items item1">
+            <div class="work-img">
+              <div class="circle-bg"><img src="images/circle3.png"></div>
+              <img class="demo-img" src="images/head.jpg">
+              <p>计时器</p>
+              <span>2016.9</span>
+            </div>
+            <div class="work-detail">
+              <span class="tri"></span>
+              <p><b>项目名称：</b><span>嘻嘻嘻</span></p>
+              <p><b>项目时间：</b><span>嘻嘻嘻</span></p>
+              <p><b>项目链接：</b><a href="www.baidu.com">www.baidu.com</a></p>
+              <p><b>项目描述：</b><span>嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</span></p>
+            </div>
+          </div>
+          <div class="work-items item2">
+            <div class="work-img">
+              <div class="circle-bg"><img src="images/circle3.png"></div>
+              <img class="demo-img" src="images/head.jpg">
+              <p>计时器</p>
+              <span>2016.9</span>
+            </div>
+            <div class="work-detail">
+              <span class="tri"></span>
+              <p><b>项目名称：</b><span>嘻嘻嘻</span></p>
+              <p><b>项目时间：</b><span>嘻嘻嘻</span></p>
+              <p><b>项目链接：</b><a href="www.baidu.com">www.baidu.com</a></p>
+              <p><b>项目描述：</b><span>嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</span></p>
+            </div>
+          </div>
+          <div class="work-items item3">
+            <div class="work-img">
+              <div class="circle-bg"><img src="images/circle3.png"></div>
+              <img class="demo-img" src="images/head.jpg">
+              <p>计时器</p>
+              <span>2016.9</span>
+            </div>
+            <div class="work-detail">
+              <span class="tri"></span>
+              <p><b>项目名称：</b><span>嘻嘻嘻</span></p>
+              <p><b>项目时间：</b><span>嘻嘻嘻</span></p>
+              <p><b>项目链接：</b><a href="www.baidu.com">www.baidu.com</a></p>
+              <p><b>项目描述：</b><span>嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</span></p>
+            </div>
+          </div>
+          <div class="work-items item4">
+            <div class="work-img">
+              <div class="circle-bg"><img src="images/circle3.png"></div>
+              <img class="demo-img" src="images/head.jpg">
+              <p>计时器</p>
+              <span>2016.9</span>
+            </div>
+            <div class="work-detail">
+              <span class="tri"></span>
+              <p><b>项目名称：</b><span>嘻嘻嘻</span></p>
+              <p><b>项目时间：</b><span>嘻嘻嘻</span></p>
+              <p><b>项目链接：</b><a href="www.baidu.com">www.baidu.com</a></p>
+              <p><b>项目描述：</b><span>嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</span></p>
+            </div>
+          </div>
+          <div class="work-items item5">
+            <div class="work-img">
+              <div class="circle-bg"><img src="images/circle3.png"></div>
+              <img class="demo-img" src="images/head.jpg">
+              <p>计时器</p>
+              <span>2016.9</span>
+            </div>
+            <div class="work-detail">
+              <span class="tri"></span>
+              <p><b>项目名称：</b><span>嘻嘻嘻</span></p>
+              <p><b>项目时间：</b><span>嘻嘻嘻</span></p>
+              <p><b>项目链接：</b><a href="www.baidu.com">www.baidu.com</a></p>
+              <p><b>项目描述：</b><span>嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</span></p>
+            </div>
+          </div>
+          <div class="work-items item5">
+            <div class="work-img">
+              <div class="circle-bg"><img src="images/circle3.png"></div>
+              <img class="demo-img" src="images/head.jpg">
+              <p>计时器</p>
+              <span>2016.9</span>
+            </div>
+            <div class="work-detail">
+              <span class="tri"></span>
+              <p><b>项目名称：</b><span>嘻嘻嘻</span></p>
+              <p><b>项目时间：</b><span>嘻嘻嘻</span></p>
+              <p><b>项目链接：</b><a href="www.baidu.com">www.baidu.com</a></p>
+              <p><b>项目描述：</b><span>嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section3">gdrth
+      </div>
+      <div class="section section4">第四屏</div>
+    </div>
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
@@ -49,14 +170,6 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script type="text/javascript" src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
     <script type="text/javascript" src="bower_components/fullpage.js/vendors/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>
@@ -64,10 +177,7 @@
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="scripts/directives/angular-fullPage.min.js"></script>
     <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/controllers/about.js"></script>
     <!-- endbuild -->
 </body>
 </html>

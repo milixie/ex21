@@ -1,20 +1,14 @@
-@mixin boxShadow($shadowValue: 1px 1px 1px #fee){
-	box-shadow: $shadowValue;
-	-webkit-box-shadow: $shadowValue;
-	-moz-box-shadow: $shadowValue;
-	-o-box-shadow: $shadowValue;
+body{
+	min-width: 768px;
+	overflow: scroll;
 }
-@mixin borderRadius($radius: 5px){
-	border-radius: $radius;
-	-webkit-border-radius: $radius;
-	-moz-border-radius: $radius;
-	-o-border-radius: $radius;
-}
+
 header {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
+	min-width: 768px;
 	height: 100px;
 	background: #fff;
 	border-bottom: 1px solid #e8e8e8;
@@ -34,15 +28,24 @@ header {
 			justify-content: flex-end;
 			padding-top: 30px;
 			li {
+				@include borderRadius(50px);
+				overflow: hidden;
+				margin: 0 10px;
+				&.active{
+					background: #7e7371;
+					color: #fff;
+					a{
+						color: #fff;
+					}
+				}
 				a{
 					display: block;
 					padding: 10px 20px;
-					color: #000;
+					color: #7e7371;
 					font-size: 16px;
 					text-decoration: none;
-					@include borderRadius(50px);
 					&:hover{
-						background: #000;
+						background: #7e7371;
 						color: #fff;
 					}
 				}
