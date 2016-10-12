@@ -126,5 +126,6 @@ body{
   -o-animation-iteration-count: $count;
 }
 
+@import "compass";
 @import '_index.scss';
 @import '_info.scss';

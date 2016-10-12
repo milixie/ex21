@@ -79,9 +79,18 @@ $(function(){
 
     autoScrolling();
 
+    // 第二屏作品详情
     $('.work-img img').on('click', function(){
       $(this).parent('.work-img').parent('.work-items').addClass('activeShow').siblings('.work-items').removeClass('activeShow');
       $('.activeShow').siblings('.work-items').children('.work-detail').slideUp();
       $(this).parent('.work-img').siblings('.work-detail').slideToggle();
     });
+
+    //第三屏项目经验
+    $('.project-detail').fadeOut();
+    $('.project-name').on('click', function(){
+      $(this).parent('.projects-item').addClass('item-active').siblings('.projects-item').removeClass('item-active');
+      $(this).siblings('.project-detail').fadeToggle();
+      $(this).parent('.item-active').siblings('.projects-item').children('.project-detail').fadeOut();
+    })
 });
