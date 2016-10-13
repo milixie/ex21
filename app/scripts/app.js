@@ -92,5 +92,12 @@ $(function(){
       $(this).parent('.projects-item').addClass('item-active').siblings('.projects-item').removeClass('item-active');
       $(this).siblings('.project-detail').fadeToggle();
       $(this).parent('.item-active').siblings('.projects-item').children('.project-detail').fadeOut();
+    });
+    //第4屏工作经验
+    $('.job-detail').fadeOut();
+    $('.job-name').on('click', function(){
+      $(this).parent('.jobs-item').addClass('item-active').siblings('.jobs-item').removeClass('item-active');
+      $(this).siblings('.job-detail').fadeToggle();
+      $(this).parent('.item-active').siblings('.jobs-item').children('.job-detail').fadeOut();
     })
 });

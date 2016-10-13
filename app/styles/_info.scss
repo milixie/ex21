@@ -262,8 +262,8 @@
 	h2{
 		font-family: "microsoft yahei";
 	}
-	.work-exper{
-		.works-item{
+	.job-exper{
+		.jobs-item{
 			position: relative;
 			border-left: 6px solid #f2dede;
 			padding: 15px;
@@ -284,7 +284,7 @@
 					height: 0;
 				}
 			}
-			.work-name{
+			.job-name{
 				width: 260px;
 				height: 60px;
 				line-height: 60px;
@@ -302,7 +302,7 @@
 					margin: 0;
 				}
 			}
-			.work-detail{
+			.job-detail{
 				position: absolute;
 				left: 300px;
 				bottom: 0;
