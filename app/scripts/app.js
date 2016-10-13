@@ -2,7 +2,7 @@ $(function(){
     $('#dowebok').fullpage({
       menu: '#menu',
       lockAnchors: false,
-      anchors:['info', 'show', 'exper', 'about'],
+      anchors:['info', 'show', 'exper', 'jobs'],
       navigation: true,
       navigationPosition: 'right',
       navigationTooltips: ['自我描述', '作品展示', '项目经验', '关于'],
@@ -78,13 +78,6 @@ $(function(){
     }
 
     autoScrolling();
-
-    // 第二屏作品详情
-    $('.work-img img').on('click', function(){
-      $(this).parent('.work-img').parent('.work-items').addClass('activeShow').siblings('.work-items').removeClass('activeShow');
-      $('.activeShow').siblings('.work-items').children('.work-detail').slideUp();
-      $(this).parent('.work-img').siblings('.work-detail').slideToggle();
-    });
 
     //第三屏项目经验
     $('.project-detail').fadeOut();

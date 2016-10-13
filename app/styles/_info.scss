@@ -82,9 +82,9 @@
 		.work-items{
 			position: relative;
 			flex: 1;
-			margin: 40px 0px;
+			margin: 20px 0px;
 			.work-img{
-				margin: 0 100px;
+				margin: 0 50px;
 				position: relative;
 				.circle-bg{
 					position: absolute;
@@ -106,7 +106,7 @@
 					color: #f2dede;
 				}
 				p{
-					margin-top: 10px;
+					margin-top: 30px;
 					margin-bottom: 0px;
 					font-size: 14px;
 				}
@@ -123,43 +123,6 @@
 				margin: 20px 0;
 				.work-img{
 					margin: 0 30px;
-				}
-			}
-			.work-detail{
-				display: none;
-				position: absolute;
-				background: #7e7371;
-				padding: 20px;
-				margin-top: 20px;
-				z-index: 100;
-				.tri{
-					position: absolute;
-					left: 46%;
-					top: -30px;
-					display: block;
-					width: 0;
-					height: 0;
-					border-width: 15px;
-					border-style: solid;
-					border-color: transparent transparent #7e7371 transparent;
-				}
-				img {
-					margin: 0px 1% 15px;
-					width: 30%;
-				}
-				p{
-					text-align: left;
-					margin-left: 5px;
-					b{
-						color: #fff;
-					}
-					span{
-						color: #fde247;
-					}
-					a{
-						color: blue;
-						text-decoration: underline;
-					}
 				}
 			}
 		}
@@ -229,6 +192,7 @@
 					span{
 						display: inline-block;
 						word-break: break-all;
+						line-height: 2em;
 						i {
 							display: inline-block;
 							padding: 2px 5px;
@@ -319,6 +283,7 @@
 					span{
 						display: inline-block;
 						word-break: break-all;
+						line-height: 2em;
 						i {
 							display: inline-block;
 							padding: 2px 5px;
