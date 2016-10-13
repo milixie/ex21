@@ -197,19 +197,20 @@
 			.project-name{
 				width: 260px;
 				height: 60px;
-				line-height: 60px;
+				padding-top: 10px;
 				background: #f2dede;
 				float: right;
 				cursor: pointer;
 				@include borderRadius(10px);
 				img{
 					width: 40px;
-					margin: 10px;
+					margin-left: 10px;
 					float: left;
 					@include borderRadius(50%);
 				}
 				p{
 					margin: 0;
+					padding-top: 6px;
 				}
 			}
 			.project-detail{
