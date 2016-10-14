@@ -115,4 +115,5 @@ $(function(){
       $('#detailEle').hide();
       $('#detailEle .ele-detail').html('');
     });
+    
 });

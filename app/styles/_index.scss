@@ -48,7 +48,7 @@ header {
 		}
 	}
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 	header {
 		height: 50px;
 		@include boxShadow(0 0 0px #e8e8e8);
