@@ -185,15 +185,14 @@
 				background: #fff;
 				padding: 20px;
 				z-index: 100;
-				i.close-btn {
-					display: none;
-				}
 				p{
 					text-align: left;
 					margin: 0;
 					label{
 						width: 100px;
 						float: left;
+						position: relative;
+						top: 4px;
 					}
 					span{
 						display: inline-block;
@@ -288,6 +287,8 @@
 					label{
 						width: 100px;
 						float: left;
+						position: relative;
+						top: 4px;
 					}
 					span{
 						display: inline-block;
@@ -355,8 +356,6 @@
 					width: 20px;
 					height: 20px;
 				}
-				.project-detail {
-				}
 			}
 		}
 	}
@@ -383,26 +382,19 @@
 }
 
 #detailEle{
+	display: none;
 	position: fixed;
-	top: 200px;
+	top: 10px;
 	left: 1%;
 	z-index: 100;
-	.project-detail{
+	.ele-detail{
 		position: relative;
 		width: 98%;
-		background: #fff;
+		background: #7e7371;
 		padding: 20px;
-		i.close-btn {
-			position: absolute;
-			right: -9px;
-			top: -16px;
-			display: block;
-			width: 26px;
-			height: 26px;
-			font-size: 36px;
-			color: #222;
-			background: #fff;
-			@include borderRadius(50%);
+		color: #fff;
+		.hide-part{
+			display: none;
 		}
 		p{
 			text-align: left;
@@ -419,17 +411,43 @@
 					display: inline-block;
 					padding: 2px 5px;
 					margin: 2px;
-					background: #f2dede;
+					background: #794940;
 					@include borderRadius(5px);
 					&:hover{
-						background: #7e7371;
-						color: #fff;
+						background: #f2dede;
 					}
 				}
 			}
 		}
 	}
 }
+// #detailEleJob{
+// 	display: none;
+// 	position: fixed;
+// 	top: 10px;
+// 	left: 1%;
+// 	z-index: 100;
+// 	.job-detail{
+// 		position: relative;
+// 		width: 98%;
+// 		background: #7e7371;
+// 		padding: 20px;
+// 		color: #fff;
+// 		p{
+// 			text-align: left;
+// 			margin: 0;
+// 			label{
+// 				width: 100px;
+// 				float: left;
+// 			}
+// 			span{
+// 				display: inline-block;
+// 				word-break: break-all;
+// 				line-height: 2em;
+// 			}
+// 		}
+// 	}
+// }
 
 @keyframes trun {
 	0%{

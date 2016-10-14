@@ -3,7 +3,7 @@ $(function(){
       menu: '#menu',
       lockAnchors: false,
       anchors:['info', 'show', 'exper', 'jobs'],
-      navigation: true,
+      navigation: false,
       navigationPosition: 'right',
       navigationTooltips: ['自我描述', '作品展示', '项目经验', '关于'],
       showActiveTooltip: false,
@@ -80,9 +80,11 @@ $(function(){
     autoScrolling();
 
     //第三屏项目经验
-    $('.project-detail').fadeOut();
-    
-    var newWindow;
+    $('.projects-item .project-detail').fadeOut();
+    //移动端点击项目经验和工作经验弹框显示
+    var detailEle = $('<div id="detailEle"><div class="ele-detail"></div></div>');
+    $('body').prepend(detailEle);
+
     $('.project-name').on('click', function(){
       if ($(window).width() > 768) {
         $(this).parent('.projects-item').addClass('item-active').siblings('.projects-item').removeClass('item-active');
@@ -90,25 +92,27 @@ $(function(){
         $(this).parent('.item-active').siblings('.projects-item').children('.project-detail').fadeOut();
       } else {
         var proDetail = $(this).siblings('.project-detail').html();
-        var detailEle = $('<div id="detailEle"></div>');
-        $('body').prepend(detailEle);
-        $('#detailEle').html('<div class="project-detail">' + proDetail + '</div>');
-        // newWindow = window.open('', '');
-        // newWindow.document.write(proDetail);
+        $('#detailEle .ele-detail').html(proDetail);
+        $('#detailEle').show();
       }
     });
-    // $('.project-detail .close').on('click', function(){
-    //   $(this).parent('.project-detail').fadeOut();
-    // })
+
     //第4屏工作经验
-    $('.job-detail').fadeOut();
+    $('.jobs-item .job-detail').fadeOut();
     $('.job-name').on('click', function(){
       if ($(window).width() > 768) {
         $(this).parent('.jobs-item').addClass('item-active').siblings('.jobs-item').removeClass('item-active');
         $(this).siblings('.job-detail').fadeToggle();
         $(this).parent('.item-active').siblings('.jobs-item').children('.job-detail').fadeOut();
       } else {
-
+        var jobDetail = $(this).siblings('.job-detail').html();
+        $('#detailEle .ele-detail').html(jobDetail);
+        $('#detailEle').show();
       }
-    })
+    });
+
+    $('#detailEle').on('click', function(){
+      $('#detailEle').hide();
+      $('#detailEle .ele-detail').html('');
+    });
 });
