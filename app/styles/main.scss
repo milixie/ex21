@@ -1,6 +1,9 @@
+@import "compass";
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import 'bootstrap-sass-official/assets/stylesheets/_bootstrap.scss';
+
+@import "../bower_components/flex.css/dist/css/flex.css";
 // endbower
 
 .browsehappy {
@@ -126,6 +129,6 @@ body{
   -o-animation-iteration-count: $count;
 }
 
-@import "compass";
+
 @import '_index.scss';
 @import '_info.scss';

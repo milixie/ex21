@@ -1,7 +1,4 @@
-body{
-	min-width: 768px;
-	overflow: scroll;
-}
+
 
 header {
 	position: fixed;
@@ -32,7 +29,7 @@ header {
 				overflow: hidden;
 				margin: 0 10px;
 				&.active{
-					background: #7e7371;
+					background: #794940;
 					color: #fff;
 					a{
 						color: #fff;
@@ -41,11 +38,11 @@ header {
 				a{
 					display: block;
 					padding: 10px 20px;
-					color: #7e7371;
+					color: #794940;
 					font-size: 16px;
 					text-decoration: none;
 					&:hover{
-						background: #7e7371;
+						background: #794940;
 						color: #fff;
 					}
 				}

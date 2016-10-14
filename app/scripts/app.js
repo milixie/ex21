@@ -81,16 +81,34 @@ $(function(){
 
     //第三屏项目经验
     $('.project-detail').fadeOut();
+    
+    var newWindow;
     $('.project-name').on('click', function(){
-      $(this).parent('.projects-item').addClass('item-active').siblings('.projects-item').removeClass('item-active');
-      $(this).siblings('.project-detail').fadeToggle();
-      $(this).parent('.item-active').siblings('.projects-item').children('.project-detail').fadeOut();
+      if ($(window).width() > 768) {
+        $(this).parent('.projects-item').addClass('item-active').siblings('.projects-item').removeClass('item-active');
+        $(this).siblings('.project-detail').fadeToggle();
+        $(this).parent('.item-active').siblings('.projects-item').children('.project-detail').fadeOut();
+      } else {
+        var proDetail = $(this).siblings('.project-detail').html();
+        var detailEle = $('<div id="detailEle"></div>');
+        $('body').prepend(detailEle);
+        $('#detailEle').html('<div class="project-detail">' + proDetail + '</div>');
+        // newWindow = window.open('', '');
+        // newWindow.document.write(proDetail);
+      }
     });
+    // $('.project-detail .close').on('click', function(){
+    //   $(this).parent('.project-detail').fadeOut();
+    // })
     //第4屏工作经验
     $('.job-detail').fadeOut();
     $('.job-name').on('click', function(){
-      $(this).parent('.jobs-item').addClass('item-active').siblings('.jobs-item').removeClass('item-active');
-      $(this).siblings('.job-detail').fadeToggle();
-      $(this).parent('.item-active').siblings('.jobs-item').children('.job-detail').fadeOut();
+      if ($(window).width() > 768) {
+        $(this).parent('.jobs-item').addClass('item-active').siblings('.jobs-item').removeClass('item-active');
+        $(this).siblings('.job-detail').fadeToggle();
+        $(this).parent('.item-active').siblings('.jobs-item').children('.job-detail').fadeOut();
+      } else {
+
+      }
     })
 });

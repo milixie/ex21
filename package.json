@@ -34,6 +34,7 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
-    "angular-fullpage.js": "^0.2.3"
+    "angular-fullpage.js": "^0.2.3",
+    "flex.css": "^1.1.4"
   }
 }
