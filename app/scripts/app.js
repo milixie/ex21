@@ -79,6 +79,40 @@ $(function(){
 
     autoScrolling();
 
+    // var navigatorName = "Microsoft Internet Explorer"; 
+    // if( navigator.appName == navigatorName ){ 
+    //   alert("ie") 
+    // }else{
+    //   alert("not ie") 
+    // }
+
+    // if(document.all){ 
+    // alert("IE"); 
+    // }else{ 
+    // alert("not ie"); 
+    // }
+
+    // var explorer = navigator.userAgent ;
+    // //ie 
+    // if (explorer.indexOf("MSIE") >= 0) {
+    //   // $('body').html('<h2 style="text-align: center;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</h2>')
+    // }
+
+    var browser = navigator.appName,
+        b_version = navigator.appVersion,
+        version = b_version.split(";"),
+        trim_Version = version[1].replace(/[ ]/g, "");
+
+    if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE9.0") {
+       alert("IE9");
+    } else if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE8.0") {
+       $('body').html('<h2 style="text-align: center;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</h2>');
+    } else if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE10.0") {
+       alert("IE10");
+    } 
+
+    console.log(trim_Version);
+
     //第三屏项目经验
     $('.projects-item .project-detail').fadeOut();
     //移动端点击项目经验和工作经验弹框显示
@@ -115,5 +149,5 @@ $(function(){
       $('#detailEle').hide();
       $('#detailEle .ele-detail').html('');
     });
-    
+
 });

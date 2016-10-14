@@ -64,12 +64,14 @@ body{
   -webkit-box-shadow: $shadowValue;
   -moz-box-shadow: $shadowValue;
   -o-box-shadow: $shadowValue;
+  -ms-box-shadow: $shadowValue;
 }
 @mixin borderRadius($radius: 5px){
   border-radius: $radius;
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   -o-border-radius: $radius;
+  -ms-border-radius: $radius;
 }
 
 @mixin transformChange($transformChange: scale(1.1) rotate(22deg) translate(20px,20px)){
@@ -77,6 +79,7 @@ body{
   -webkit-transform: $transformChange;
   -moz-transform: $transformChange;
   -o-transform: $transformChange;
+  -ms-transform: $transformChange;
 }
 
 @mixin transitionSpeed($transitionSpeed: all 1s){
@@ -84,6 +87,7 @@ body{
   -webkit-transition: $transitionSpeed;
   -moz-transition: $transitionSpeed;
   -o-transition: $transitionSpeed;
+  -ms-transition: $transitionSpeed;
 }
 
 @mixin keyframes($name) {
@@ -100,33 +104,6 @@ body{
     @content;
   }
 }
-
-@mixin animation($animation-name , $delay, $duration, $count) {
-  animation-delay: $delay;
-  animation-duration: $duration;
-  animation-name: $animation-name;
-  animation-fill-mode: forwards;
-  animation-iteration-count: $count;
-
-  -webkit-animation-delay: $delay;
-  -webkit-animation-duration: $duration;
-  -webkit-animation-name: $animation-name;
-  -webkit-animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: $count;
-
-  -moz-animation-delay: $delay;
-  -moz-animation-duration: $duration;
-  -moz-animation-name: $animation-name;
-  -moz-animation-fill-mode: forwards;
-  -moz-animation-iteration-count: $count;
-
-  -o-animation-delay: $delay;
-  -o-animation-duration: $duration;
-  -o-animation-name: $animation-name;
-  -o-animation-fill-mode: forwards;
-  -o-animation-iteration-count: $count;
-}
-
 
 @import '_index.scss';
 @import '_info.scss';

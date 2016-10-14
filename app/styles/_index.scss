@@ -20,7 +20,10 @@ header {
 		ul {
 			display: flex;
 			display: -webkit-flex;
+			display: -ms-flex;
 			justify-content: flex-end;
+			-webkit-justify-content: flex-end;
+			-ms-justify-content: flex-end;
 			padding-top: 30px;
 			li {
 				@include borderRadius(50px);
@@ -60,6 +63,8 @@ header {
 		nav {
 			ul {
 				justify-content: flex-start;
+				-webkit-justify-content: flex-start;
+				-ms-justify-content: flex-start;
 				padding-top: 10px;
 				li {
 					margin: 0px;

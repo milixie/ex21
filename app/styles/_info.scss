@@ -3,7 +3,7 @@
 	text-align: center;
 }
 .section1 {
-	background: url(../images/section2.jpg);
+	background: url('http://7xj5et.com1.z0.glb.clouddn.com/github/myinfo/img/section2.jpg');
 	.head {
 		position: relative;
 		width: 122px;
@@ -11,7 +11,7 @@
 		line-height: 102px;
 		margin: auto;
 		padding: 10px;
-		background: url(../images/circle1.png);
+		background: url('http://7xj5et.com1.z0.glb.clouddn.com/github/myinfo/img/circle1.png');
 		overflow: hidden;
 		.img-border{
 			position: absolute;
@@ -23,6 +23,7 @@
 			-webkit-animation: trun 3s infinite;
 			-moz-animation: trun 3s infinite;
 			-o-animation: trun 3s infinite;
+			-ms-animation: trun 3s infinite;
 		}
 		.img-head{
 			@include transitionSpeed(all 1s);
@@ -67,7 +68,7 @@
 }
 
 .section2 {
-	background: url(../images/2bg.jpg);
+	background: url('http://7xj5et.com1.z0.glb.clouddn.com/github/myinfo/img/2bg.jpg');
 	h2{
 		color: #f2dede;
 		font-family: "microsoft yahei";
@@ -76,13 +77,18 @@
 	.works{
 		display: flex;
 		display: -webkit-flex;
+		display: -ms-flex;
 		flex-flow: row wrap;
 		-webkit-flex-flow: row wrap;
+		-ms-flex-flow: row wrap;
 		justify-content: space-between;
 		-webkit-justify-content: space-between;
+		-ms-justify-content: space-between;
 		.work-items{
 			position: relative;
 			flex: 1;
+			-webkit-flex: 1;
+			-ms-flex: 1;
 			margin: 5px 0px;
 			.work-img{
 				margin: 0 20px;
@@ -123,6 +129,7 @@
 						-webkit-animation: circleTurn 4s infinite;
 						-moz-animation: circleTurn 4s infinite;
 						-o-animation: circleTurn 4s infinite;
+						-ms-animation: circleTurn 4s infinite;
 					}
 				}
 			}
@@ -131,7 +138,7 @@
 }
 
 .section3{
-	background: url(../images/3bg.jpg);
+	background: url('http://7xj5et.com1.z0.glb.clouddn.com/github/myinfo/img/3bg.jpg');
 	h2{
 		font-family: "microsoft yahei";
 		color: #f2dede;
@@ -228,7 +235,7 @@
 }
 
 .section4{
-	background: url(../images/4bg.jpg);
+	background: url('http://7xj5et.com1.z0.glb.clouddn.com/github/myinfo/img/4bg.jpg');
 	h2{
 		font-family: "microsoft yahei";
 		margin-bottom: 30px;
@@ -552,5 +559,28 @@
 	}
 	100%{
 		-o-transform: rotate(0deg) scale(1);
+	}
+}
+@-ms-keyframes circleTurn {
+	0%{
+		-ms-transform: rotate(0deg) scale(1);
+	}
+	10%{
+		-ms-transform: rotate(45deg) scale(0.95);
+	}
+	30%{
+		-ms-transform: rotate(-60deg) scale(1.05);
+	}
+	50%{
+		-ms-transform: rotate(90deg) scale(1.1);
+	}
+	70%{
+		-ms-transform: rotate(-60deg) scale(1.05);
+	}
+	90%{
+		-ms-transform: rotate(45deg) scale(0.95);
+	}
+	100%{
+		-ms-transform: rotate(0deg) scale(1);
 	}
 }
