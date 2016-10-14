@@ -322,7 +322,7 @@
 		}
 		ul {
 			width: 100%;
-			margin: 20px auto;
+			margin: 10px auto;
 			padding: 15px;
 			font-size: 12px;
 			li {
@@ -384,7 +384,7 @@
 #detailEle{
 	display: none;
 	position: fixed;
-	top: 10px;
+	top: 56px;
 	left: 1%;
 	z-index: 100;
 	.ele-detail{
@@ -421,33 +421,6 @@
 		}
 	}
 }
-// #detailEleJob{
-// 	display: none;
-// 	position: fixed;
-// 	top: 10px;
-// 	left: 1%;
-// 	z-index: 100;
-// 	.job-detail{
-// 		position: relative;
-// 		width: 98%;
-// 		background: #7e7371;
-// 		padding: 20px;
-// 		color: #fff;
-// 		p{
-// 			text-align: left;
-// 			margin: 0;
-// 			label{
-// 				width: 100px;
-// 				float: left;
-// 			}
-// 			span{
-// 				display: inline-block;
-// 				word-break: break-all;
-// 				line-height: 2em;
-// 			}
-// 		}
-// 	}
-// }
 
 @keyframes trun {
 	0%{

@@ -19,7 +19,7 @@ header {
 	nav {
 		ul {
 			display: flex;
-			-webkit-display: flex;
+			display: -webkit-flex;
 			justify-content: flex-end;
 			padding-top: 30px;
 			li {
@@ -42,6 +42,30 @@ header {
 					&:hover{
 						background: #794940;
 						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px){
+	header {
+		height: 50px;
+		@include boxShadow(0 0 0px #e8e8e8);
+		img {
+			width: 30px;
+			height: 30px;
+			margin: 10px 10px 0 0;
+		}
+		nav {
+			ul {
+				justify-content: flex-start;
+				padding-top: 10px;
+				li {
+					margin: 0px;
+					a{
+						padding: 6px;
+						font-size: 12px;
 					}
 				}
 			}
