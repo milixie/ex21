@@ -115,12 +115,12 @@ $(function(){
     // alert(browser);
     // alert(trim_Version);
 
-    //第三屏项目经验
-    $('.projects-item .project-detail').fadeOut();
     //移动端点击项目经验和工作经验弹框显示
     var detailEle = $('<div id="detailEle"><div class="ele-detail"></div></div>');
     $('body').prepend(detailEle);
 
+    //第三屏项目经验
+    $('.projects-item .project-detail').fadeOut();
     $('.project-name').on('click', function(){
       if ($(window).width() > 768) {
         $(this).parent('.projects-item').addClass('item-active').siblings('.projects-item').removeClass('item-active');
