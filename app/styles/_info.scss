@@ -84,11 +84,14 @@
 		justify-content: space-between;
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
+		display: block\0;
 		.work-items{
 			position: relative;
 			flex: 1;
 			-webkit-flex: 1;
 			-ms-flex: 1;
+			width: 20%\0;
+			float: left\0;
 			margin: 5px 0px;
 			.work-img{
 				margin: 0 20px;

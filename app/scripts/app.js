@@ -98,20 +98,22 @@ $(function(){
     //   // $('body').html('<h2 style="text-align: center;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</h2>')
     // }
 
-    var browser = navigator.appName,
-        b_version = navigator.appVersion,
-        version = b_version.split(";"),
-        trim_Version = version[1].replace(/[ ]/g, "");
+    // var browser = navigator.appName,
+    //     b_version = navigator.appVersion,
+    //     version = b_version.split(";"),
+    //     trim_Version = version[1].replace(/[ ]/g, "");
 
-    if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE9.0") {
-       alert("IE9");
-    } else if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE8.0") {
-       $('body').html('<h2 style="text-align: center;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</h2>');
-    } else if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE10.0") {
-       alert("IE10");
-    } 
+    // if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE9.0") {
+    //    // alert("IE9");
+    // } else if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE8.0") {
+    //   $('header').remove();
+    //   $('#dowebok').remove();
+    // } else if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE10.0") {
+    //    // alert("IE10");
+    // } 
 
-    console.log(trim_Version);
+    // alert(browser);
+    // alert(trim_Version);
 
     //第三屏项目经验
     $('.projects-item .project-detail').fadeOut();

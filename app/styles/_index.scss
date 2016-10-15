@@ -1,9 +1,12 @@
+img.header-logo{
+	width: 60px\0;
+	height: 60px\0;
+}
 header {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	min-width: 768px;
 	height: 100px;
 	background: #fff;
 	border-bottom: 1px solid #e8e8e8;
@@ -24,11 +27,16 @@ header {
 			justify-content: flex-end;
 			-webkit-justify-content: flex-end;
 			-ms-justify-content: flex-end;
+			display: block\0;  //for ie8 ie9 ie10
+			float: right\0;  //for ie8 ie9 ie10
 			padding-top: 30px;
 			li {
 				@include borderRadius(50px);
 				overflow: hidden;
 				margin: 0 10px;
+				display: inline-block\0;  //for ie8 ie9 ie10
+				float: left\0;  //for ie8 ie9 ie10
+				width: 106px\0;  //for ie8 ie9 ie10
 				&.active{
 					background: #794940;
 					color: #fff;
