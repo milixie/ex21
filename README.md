@@ -176,30 +176,8 @@ float: right\0;  //for ie8 ie9 ie10
 ```
 
 
+## 移动端效果
 
+- 引入`<meta name="viewport" content="width=device-width,initial-scale=1">`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- 使用`@media screen and (max-width: 768px)`使得页面响应到移动端
