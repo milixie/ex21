@@ -2,10 +2,10 @@ $(function(){
     $('#dowebok').fullpage({
       menu: '#menu',
       lockAnchors: false,
-      anchors:['info', 'show', 'exper', 'jobs'],
+      anchors:['info', 'show', 'exper', 'skill'],
       navigation: false,
       navigationPosition: 'right',
-      navigationTooltips: ['自我描述', '作品展示', '项目经验', '关于'],
+      navigationTooltips: ['自我描述', '作品展示', '经验总结', '技术总结'],
       showActiveTooltip: false,
       slidesNavigation: true,
       slidesNavPosition: 'bottom',

@@ -59,6 +59,11 @@ body{
   float: right;
 }
 
+.container{
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @mixin boxShadow($shadowValue: 1px 1px 1px #fee){
   box-shadow: $shadowValue;
   -webkit-box-shadow: $shadowValue;

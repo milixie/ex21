@@ -3,7 +3,7 @@
 	text-align: center;
 }
 .section1 {
-	background: url('http://7xj5et.com1.z0.glb.clouddn.com/github/myinfo/img/section2.jpg');
+	background: url(../images/section2.jpg);
 	.head {
 		position: relative;
 		width: 122px;
@@ -87,9 +87,6 @@
 		display: block\0;
 		.work-items{
 			position: relative;
-			flex: 1;
-			-webkit-flex: 1;
-			-ms-flex: 1;
 			width: 20%\0;
 			float: left\0;
 			margin: 5px 0px;
@@ -141,185 +138,148 @@
 }
 
 .section3{
-	background: url('http://7xj5et.com1.z0.glb.clouddn.com/github/myinfo/img/3bg.jpg');
-	h2{
-		font-family: "microsoft yahei";
-		color: #f2dede;
-		margin-bottom: 30px;
-	}
-	.projects{
-		.projects-item{
-			position: relative;
-			border-right: 6px solid #f2dede;
-			padding: 15px;
-			margin-right: 30%;
-			&::before{
-				position: absolute;
-				bottom: -16px;
-				right: -16px;
-				content: "";
-				width: 25px;
-				height: 25px;
-				background: #f2dede;
-				@include borderRadius(50%);
-			}
-			&:last-child{
-				&::before{
-					width: 0;
-					height: 0;
-				}
-			}
-			.project-name{
-				width: 260px;
-				height: 60px;
-				padding-top: 10px;
-				background: #f2dede;
-				float: right;
-				cursor: pointer;
-				@include borderRadius(10px);
-				img{
-					width: 40px;
-					margin-left: 10px;
-					float: left;
-					@include borderRadius(50%);
-				}
-				p{
-					margin: 0;
-					padding-top: 6px;
-				}
-			}
-			.project-detail{
-				position: absolute;
-				right: 300px;
-				bottom: -140px;
-				background: #fff;
-				padding: 20px;
-				z-index: 100;
-				p{
-					text-align: left;
-					margin: 0;
-					label{
-						width: 100px;
-						float: left;
-						position: relative;
-						top: 4px;
-					}
-					span{
-						display: inline-block;
-						word-break: break-all;
-						line-height: 2em;
-						i {
-							display: inline-block;
-							padding: 2px 5px;
-							margin: 2px;
-							background: #f2dede;
-							@include borderRadius(5px);
-							&:hover{
-								background: #7e7371;
-								color: #fff;
-							}
-						}
-					}
-				}
-				&::before{
-					content: "";
-					position: absolute;
-					right: -30px;
-					bottom: 180px;
-					width: 30px;
-					height: 10px;
-					background-color: #ffffff; // Old browsers
-					@include filter-gradient(#ffffff, #f2dede, horizontal); // IE6-9
-					@include background-image(linear-gradient(left,  #ffffff 0%,#f2dede 100%));
-				}
-			}
-		}
-	}
-}
-
-.section4{
 	background: url('http://7xj5et.com1.z0.glb.clouddn.com/github/myinfo/img/4bg.jpg');
 	h2{
 		font-family: "microsoft yahei";
 		margin-bottom: 30px;
 		color: #fff;
 	}
-	.job-exper{
-		.jobs-item{
-			position: relative;
-			border-left: 6px solid #f2dede;
-			padding: 15px;
-			margin-left: 30%;
-			&::before{
-				position: absolute;
-				bottom: -16px;
-				left: -16px;
-				content: "";
-				width: 25px;
-				height: 25px;
-				background: #f2dede;
-				@include borderRadius(50%);
-			}
-			&:last-child{
-				&::before{
-					width: 0;
-					height: 0;
+	.expers{
+		.expers-public{
+			padding-right: 0;
+			padding-left: 0;
+			.expers-public-item{
+				position: relative;
+				padding: 15px;
+				.expers-public-name{
+					width: 200px;
+					height: 60px;
+					background: #f2dede;
+					padding-top: 10px;
+					cursor: pointer;
+					@include borderRadius(10px);
+					img{
+						width: 40px;
+						margin-left: 10px;
+						float: left;
+						@include borderRadius(50%);
+					}
+					p{
+						margin: 0;
+					}
+				}
+				.expers-public-detail{
+					position: absolute;
+					background: #fff;
+					padding: 20px;
+					z-index: 100;
+					p{
+						text-align: left;
+						margin: 0;
+						label{
+							width: 100px;
+							float: left;
+							position: relative;
+							top: 4px;
+						}
+						span{
+							display: inline-block;
+							word-break: break-all;
+							line-height: 2em;
+							i {
+								display: inline-block;
+								padding: 2px 5px;
+								margin: 2px;
+								background: #f2dede;
+								@include borderRadius(5px);
+								&:hover{
+									background: #7e7371;
+									color: #fff;
+								}
+							}
+						}
+					}
+					&::before{
+						content: "";
+						position: absolute;
+						bottom: 180px;
+						width: 20px;
+						height: 10px;
+						background-color: #ffffff; // Old browsers
+					}
 				}
 			}
-			.job-name{
-				width: 260px;
-				height: 60px;
-				line-height: 60px;
-				background: #f2dede;
-				float: left;
-				cursor: pointer;
-				@include borderRadius(10px);
-				img{
-					width: 40px;
-					margin: 10px;
-					float: left;
+		}
+		.projects{
+			h2{
+				text-align: right;
+				margin-right: 50px;
+			}
+			.projects-item{
+				border-right: 6px solid #f2dede;
+				margin-right: 0;
+				&::before{
+					position: absolute;
+					bottom: -16px;
+					right: -16px;
+					content: "";
+					width: 25px;
+					height: 25px;
+					background: #f2dede;
 					@include borderRadius(50%);
 				}
-				p{
-					margin: 0;
+				&:last-child{
+					&::before{
+						width: 0;
+						height: 0;
+					}
+				}
+				.project-name{
+					float: right;
+					p{
+						padding-top: 6px;
+					}
+				}
+				.project-detail{
+					right: 230px;
+					bottom: -140px;
+					&::before{
+						right: -20px;
+						bottom: 180px;
+						@include filter-gradient(#ffffff, #f2dede, horizontal); // IE6-9
+						@include background-image(linear-gradient(left,  #ffffff 0%,#f2dede 100%));
+					}
 				}
 			}
-			.job-detail{
-				position: absolute;
-				left: 300px;
-				bottom: -100px;
-				background: #fff;
-				padding: 20px;
-				z-index: 100;
-				p{
-					text-align: left;
-					margin: 0;
-					label{
-						width: 100px;
-						float: left;
-						position: relative;
-						top: 4px;
-					}
-					span{
-						display: inline-block;
-						word-break: break-all;
-						line-height: 2em;
-					}
+		}
+		.jobs{
+			h2{
+				text-align: left;
+				margin-left: 50px;
+			}
+			.jobs-item{
+				margin-left: 0;
+				.job-name{
+					line-height: 42px;
+					float: left;
 				}
-				&::before{
-					content: "";
-					position: absolute;
-					left: -30px;
-					bottom: 140px;
-					width: 30px;
-					height: 10px;
-					background-color: #ffffff; // Old browsers
-					@include filter-gradient(#f2dede, #fff, horizontal); // IE6-9
-					@include background-image(linear-gradient(left,  #f2dede 0%,#fff 100%));
+				.job-detail{
+					left: 230px;
+					bottom: -100px;
+					&::before{
+						left: -20px;
+						bottom: 140px;
+						@include filter-gradient(#f2dede, #fff, horizontal); // IE6-9
+						@include background-image(linear-gradient(left,  #f2dede 0%,#fff 100%));
+					}
 				}
 			}
 		}
 	}
+}
+
+.section4 {
+	background: url(../images/section10.jpg) repeat center;
 }
 
 @media screen and (max-width: 767px) {
@@ -355,36 +315,37 @@
 			margin-bottom: 20px;
 			font-size: 20px;
 		}
-		.projects{
-			.projects-item{
-				border-right: 4px solid #f2dede;
-				padding: 8px;
-				margin-right: 2%;
-				&::before{
-					bottom: -13px;
-					right: -13px;
-					width: 20px;
-					height: 20px;
+		.expers{
+			.expers-public{
+				padding-left: 3%;
+				h2{
+					text-align: center;
+				}
+				.expers-public-item{
+					padding: 8px;
+					.expers-public-name{
+						width: 96%;
+					}
 				}
 			}
-		}
-	}
-
-	.section4{
-		h2{
-			margin-bottom: 20px;
-			font-size: 20px;
-		}
-		.job-exper{
-			.jobs-item{
-				border-left: 4px solid #f2dede;
-				padding: 8px;
-				margin-left: 2%;
-				&::before{
-					bottom: -13px;
-					left: -13px;
-					width: 20px;
-					height: 20px;
+			.projects {
+				h2{
+					margin-right: 0;
+				}
+				.projects-item{
+					border: none;
+					&::before{
+						width: 0px;
+						height: 0px;
+					}
+					.project-name{
+						float: left;
+					}
+				}
+			}
+			.jobs{
+				h2{
+					margin-left: 0;
 				}
 			}
 		}
