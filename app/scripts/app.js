@@ -12,12 +12,12 @@ $(function(){
 
       //Scrolling
       css3: true,
-      scrollingSpeed: 700,
+      scrollingSpeed: 1000,
       autoScrolling: true,
       fitToSection: true,
       fitToSectionDelay: 1000,
       scrollBar: false,
-      easing: 'easeInOutCubic',
+      easing: 'easeInQuart',
       easingcss3: 'ease',
       loopBottom: false,
       loopTop: false,
@@ -56,8 +56,46 @@ $(function(){
       slideSelector: '.slide',
 
       //events
-      onLeave: function(index, nextIndex, direction){},
-      afterLoad: function(anchorLink, index){},
+      onLeave: function(index, nextIndex, direction){
+        if (index == 4) {
+          $('.skills li').each(function(i){
+            var $rel = $(this).css('left');
+            var $arr = $rel.split('px');
+
+            switch (i % 2) {
+              case 0:
+                $(this).animate({
+                  left: '2000px',
+                  top: '1000px'
+                }, (Math.random() * (i % 4) + 1) * 200);
+                break;
+              case 1:
+                $(this).animate({
+                  left: '-2000px',
+                  top: '1000px'
+                }, (Math.random() * (i % 4) + 1) * 100);
+                break;
+              default:
+                break;
+            }
+          });
+        }
+      },
+      afterLoad: function(anchorLink, index){
+        if (index == 4) {
+          $('.skills li').each(function(i){
+            var $rel = $(this).css('left');
+            var $arr = $rel.split('px');
+
+            //使得最终每个li都是left:[-25, 25], top:[-25, 25]
+            $(this).animate({
+              left: Math.random() * 50 - 25 + 'px',
+              top: Math.random() * 50 - 25 + 'px'
+            }, (Math.random() * (i % 4) + 1) * 400);
+
+          });
+        }
+      },
       afterRender: function(){},
       afterResize: function(){},
       afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},

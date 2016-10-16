@@ -279,7 +279,91 @@
 }
 
 .section4 {
-	background: url(../images/section10.jpg) repeat center;
+	background: url(../images/section10.jpg) repeat center top;
+	overflow: hidden;
+	.skills{
+		display: flex;
+		display: -webkit-flex;
+		justify-content: space-around;
+		-webkit-justify-content: space-around;
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		li{
+			position: relative;
+			width: 160px;
+			height: 180px;
+			top: 1000px;
+			img{
+				width: 110px;
+			}
+			&:nth-child(odd) {
+				left: 2000px;
+			}
+			&:nth-child(even) {
+				left: -2000px;
+			}
+			.skills-1{
+				@include transformChange(rotate(-30deg));
+			}
+			.skills-2{
+				@include transformChange(rotate(10deg));
+			}
+			.skills-3{
+				@include transformChange(rotate(-5deg));
+			}
+			.skills-4{
+				@include transformChange(rotate(-15deg));
+			}
+			.skills-5{
+				@include transformChange(rotate(5deg));
+			}
+			.skills-6{
+				@include transformChange(rotate(15deg));
+			}
+			.skills-7{
+				@include transformChange(rotate(-5deg));
+			}
+			.skills-8{
+				@include transformChange(rotate(25deg));
+			}
+			.skills-9{
+				@include transformChange(rotate(-10deg));
+			}
+			.skills-10{
+				@include transformChange(rotate(20deg));
+			}
+			.skills-11{
+				@include transformChange(rotate(-10deg));
+			}
+			.skills-12{
+				@include transformChange(rotate(5deg));
+			}
+			.skills-13{
+				@include transformChange(rotate(-15deg));
+			}
+			.skills-14{
+				@include transformChange(rotate(-10deg));
+			}
+			.skills-15{
+				@include transformChange(rotate(-5deg));
+			}
+			.skills-16{
+				@include transformChange(rotate(-20deg));
+			}
+			.skills-17{
+				@include transformChange(rotate(0deg));
+			}
+			.skills-18{
+				@include transformChange(rotate(10deg));
+			}
+			.skills-19{
+				@include transformChange(rotate(-10deg));
+			}
+			.skills-20{
+				@include transformChange(rotate(30deg));
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -347,6 +431,15 @@
 				h2{
 					margin-left: 0;
 				}
+			}
+		}
+	}
+
+	.section4{
+		.skills{
+			li {
+				width: 130px;
+				height: 150px;
 			}
 		}
 	}
