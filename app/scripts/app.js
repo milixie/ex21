@@ -1,6 +1,6 @@
 $(function(){
   var $ww = $(window).width();
-  if ($ww >= 768){
+  if ($ww > 768){
     $('#dowebok').fullpage({
       menu: '#menu',
       lockAnchors: false,
@@ -151,6 +151,15 @@ $(function(){
     }
 
     autoScrolling();
+  } else {
+    var a1 = $('<a name="info" class="tips"></a>'),
+        a2 = $('<a name="show" class="tips"></a>'),
+        a3 = $('<a name="exper" class="tips"></a>'),
+        a4 = $('<a name="skill" class="tips"></a>');
+    $('.section1').prepend(a1);
+    $('.section2').prepend(a2);
+    $('.section3').prepend(a3);
+    $('.section4').prepend(a4);
   }
 
 
