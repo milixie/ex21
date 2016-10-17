@@ -3,10 +3,12 @@
 	text-align: center;
 	h2 {
 		font-family: "microsoft yahei";
+		padding-top: 50px;
 	}
 }
 .section1 {
 	background: url(../images/section2.jpg);
+	padding-top: 100px;
 	.head {
 		position: relative;
 		width: 100px;
@@ -21,8 +23,9 @@
 			border: 8px solid #4695fa;
 		}
 	}
-	h2{
+	h3{
 		color: #794940;
+		font-family: "microsoft yahei";
 	}
 	.detail {
 		font-size: 14px;
@@ -155,6 +158,7 @@
 					}
 				}
 				.expers-public-detail{
+					display: none;
 					position: absolute;
 					background: #fff;
 					padding: 20px;
@@ -355,14 +359,19 @@
 }
 
 @media screen and (max-width: 767px) {
-	.section1 {
-		h2 {
+	.section{
+		h2{
 			font-size: 20px;
+			margin-top: 0;
 		}
+	}
+	.section1 {
+		padding: 80px 10px 20px;
 		.detail{
 			font-size: 12px;
 		}
 		ul {
+			top: 0px;
 			width: 100%;
 			margin: 10px auto;
 			padding: 15px;
@@ -374,7 +383,6 @@
 	}
 	.section2 {
 		h2{
-			font-size: 20px;
 			margin-bottom: 20px;
 		}
 		.works{
@@ -385,7 +393,6 @@
 	.section3{
 		h2{
 			margin-bottom: 20px;
-			font-size: 20px;
 		}
 		.expers{
 			.expers-public{
@@ -412,12 +419,18 @@
 					}
 					.project-name{
 						float: left;
+						left: 0px;
 					}
 				}
 			}
 			.jobs{
 				h2{
 					margin-left: 0;
+				}
+				.jobs-item{
+					.job-name{
+						left: 0px;
+					}
 				}
 			}
 		}
@@ -428,6 +441,8 @@
 			li {
 				width: 130px;
 				height: 150px;
+				left: 0px !important;
+				top: 0 !important;
 			}
 		}
 	}

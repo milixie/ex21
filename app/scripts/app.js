@@ -1,4 +1,6 @@
 $(function(){
+  var $ww = $(window).width();
+  if ($ww >= 768){
     $('#dowebok').fullpage({
       menu: '#menu',
       lockAnchors: false,
@@ -135,14 +137,13 @@ $(function(){
       onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
 
-
     $(window).resize(function(){
         autoScrolling();
     });
 
     function autoScrolling(){
-        var $ww = $(window).width();
-        if($ww < 1024){
+        var $ww1 = $(window).width();
+        if($ww1 < 1024){
             $.fn.fullpage.setAutoScrolling(false);
         } else {
             $.fn.fullpage.setAutoScrolling(true);
@@ -150,6 +151,10 @@ $(function(){
     }
 
     autoScrolling();
+  }
+
+
+    
 
     // var navigatorName = "Microsoft Internet Explorer"; 
     // if( navigator.appName == navigatorName ){ 
