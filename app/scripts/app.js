@@ -1,5 +1,6 @@
 $(function(){
   var $ww = $(window).width();
+  // 当浏览器宽度大于768的时候运用fullpage.js类库
   if ($ww > 768){
     $('#dowebok').fullpage({
       menu: '#menu',
@@ -151,7 +152,7 @@ $(function(){
     }
 
     autoScrolling();
-  } else {
+  } else { //自己定义锚点
     var a1 = $('<a name="info" class="tips"></a>'),
         a2 = $('<a name="show" class="tips"></a>'),
         a3 = $('<a name="exper" class="tips"></a>'),
