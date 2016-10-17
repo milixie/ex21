@@ -17,7 +17,7 @@ $(function(){
       fitToSection: true,
       fitToSectionDelay: 1000,
       scrollBar: false,
-      easing: 'easeInQuart',
+      easing: 'linear',
       easingcss3: 'ease',
       loopBottom: false,
       loopTop: false,
@@ -57,6 +57,23 @@ $(function(){
 
       //events
       onLeave: function(index, nextIndex, direction){
+        if (index == 1) {
+          // $('.section1 .head').animate({
+          //   top: '-1000px'
+          // }, 800);
+          $('.section1 .head').removeClass('head-anim');
+          $('.section1 ul').animate({
+            top: '500px'
+          }, 800);
+        }
+        if (index == 3) {
+          $('.project-name').animate({
+            left: '-1000px'
+          }, 1000);
+          $('.job-name').animate({
+            left: '1000px'
+          }, 1000);
+        }
         if (index == 4) {
           $('.skills li').each(function(i){
             var $rel = $(this).css('left');
@@ -82,6 +99,22 @@ $(function(){
         }
       },
       afterLoad: function(anchorLink, index){
+        if (index == 1) {
+          // $('.section1 .head').animate({
+          //   top: '0px'
+          // }, 800);
+          $('.section1 .head').addClass('head-anim');
+          $('.section1 ul').animate({
+            top: '0px'
+          }, 800);
+        }
+        if (index == 3) {
+          $('.expers-public-name').each(function(i){
+            $(this).animate({
+              left: '0px'
+            }, (Math.random() * (i % 4) + 1) * 400);
+          })
+        }
         if (index == 4) {
           $('.skills li').each(function(i){
             var $rel = $(this).css('left');
@@ -101,6 +134,7 @@ $(function(){
       afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
       onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
+
 
     $(window).resize(function(){
         autoScrolling();

@@ -1,49 +1,36 @@
 
 .section {
 	text-align: center;
+	h2 {
+		font-family: "microsoft yahei";
+	}
 }
 .section1 {
 	background: url(../images/section2.jpg);
 	.head {
 		position: relative;
-		width: 122px;
-		height: 122px;
-		line-height: 102px;
+		width: 100px;
+		height: 150px;
 		margin: auto;
-		padding: 10px;
-		background: url('http://7xj5et.com1.z0.glb.clouddn.com/github/myinfo/img/circle1.png');
-		overflow: hidden;
-		.img-border{
-			position: absolute;
-			left: 4%;
-			top: 4%;
-			width: 92%;
-			@include transformChange(rotate(45deg));
-			animation: trun 3s infinite;
-			-webkit-animation: trun 3s infinite;
-			-moz-animation: trun 3s infinite;
-			-o-animation: trun 3s infinite;
-			-ms-animation: trun 3s infinite;
+		@include transitionSpeed(all 3s);
+		&.head-anim{
+			animation: headAnim 3s;
 		}
 		.img-head{
 			@include transitionSpeed(all 1s);
-			width: 90%;
-			border: 4px solid #7e7371;
-			@include borderRadius(50%);
-			&:hover {
-				@include transformChange(rotate(360deg));
-			}
+			border: 8px solid #4695fa;
 		}
 	}
 	h2{
 		color: #794940;
-		font-family: "microsoft yahei";
 	}
 	.detail {
 		font-size: 14px;
 		color: #7e7371;
 	}
 	ul {
+		position: relative;
+		top: 500px;
 		width: 600px;
 		background: rgba(255, 255, 255, 0.2);
 		text-align: left;
@@ -71,7 +58,6 @@
 	background: url('http://7xj5et.com1.z0.glb.clouddn.com/github/myinfo/img/2bg.jpg');
 	h2{
 		color: #f2dede;
-		font-family: "microsoft yahei";
 		margin-bottom: 50px;
 	}
 	.works{
@@ -140,7 +126,6 @@
 .section3{
 	background: url('http://7xj5et.com1.z0.glb.clouddn.com/github/myinfo/img/4bg.jpg');
 	h2{
-		font-family: "microsoft yahei";
 		margin-bottom: 30px;
 		color: #fff;
 	}
@@ -152,6 +137,7 @@
 				position: relative;
 				padding: 15px;
 				.expers-public-name{
+					position: relative;
 					width: 200px;
 					height: 60px;
 					background: #f2dede;
@@ -236,6 +222,7 @@
 				}
 				.project-name{
 					float: right;
+					left: -1000px;
 					p{
 						padding-top: 6px;
 					}
@@ -262,6 +249,7 @@
 				.job-name{
 					line-height: 42px;
 					float: left;
+					left: 1000px;
 				}
 				.job-detail{
 					left: 230px;
@@ -486,45 +474,35 @@
 	}
 }
 
-@keyframes trun {
-	0%{
-		transform: rotate(45deg);
+@keyframes headAnim {
+	0% {
+		top: 0px;
 	}
-	100% {
-		transform: rotate(405deg);
+	15% {
+		top: -300px;
 	}
-}
-@-webkit-keyframes trun {
-	0%{
-		transform: rotate(45deg);
-		-webkit-transform: rotate(45deg);
+	30% {
+		top: 30px;
 	}
-	100% {
-		transform: rotate(405deg);
-		-webkit-transform: rotate(405deg);
+	42% {
+		top: -120px;
 	}
-}
-@-moz-keyframes trun {
-	0%{
-		transform: rotate(45deg);
-		-moz-transform: rotate(45deg);
+	55% {
+		top: 20px;
 	}
-	100% {
-		transform: rotate(405deg);
-		-moz-transform: rotate(405deg);
+	68% {
+		top: -80px;
 	}
-}
-@-o-keyframes trun {
-	0%{
-		transform: rotate(45deg);
-		-o-transform: rotate(45deg);
+	78% {
+		top: 10px;
 	}
-	100% {
-		transform: rotate(405deg);
-		-o-transform: rotate(405deg);
+	85% {
+		top: -50px;
+	}
+	100%{
+		top: 0px;
 	}
 }
-
 
 @keyframes circleTurn {
 	0%{
