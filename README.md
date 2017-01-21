@@ -1,4 +1,4 @@
-# 效果 <a href="http://7xj5et.com1.z0.glb.clouddn.com/github/myinfo/html2.0/index.html" target="_blank">http://7xj5et.com1.z0.glb.clouddn.com/github/myinfo/html2.0/index.html</a>
+
 
 # 项目说明
 
